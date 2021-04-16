@@ -1,0 +1,49 @@
+*************************************
+>> 01_IntroductionToPython
+*************************************
+
+type(var_num)
+str(var_num)
+float(var_num)
+
+round(1.689,2)
+name= "mayumy"
+name.capitalize()
+name.replace("y","*")
+name.upper()
+name.index("y")
+--------------- Lista -------------------
+list_example = ["heydy", 22, "ines","a", 12, True, 12]
+list_example[3:5]
+list_example[:5]
+
+del(list_example[3])
+len(list_example)
+max(list_example) #Numerico
+sorted(list_example,reverse=True)  # Descendiente, Numerico
+
+list_example.index("heydy") # Metodo
+list_example.count(12)
+list_example.append("mayu")
+list_example.remove("mayu")
+list_example.reverse()
+
+# Creando una nueva lista Correctamente
+x = ["a", "b", "c"]
+# y = list(x)
+y = x[:]
+-----------------------------------------
+--------------- Numpy -------------------
+list_example = [1.73, 1.68, 1.71, 1.89, 1.79] # Lista
+np_array = np.array(list_example) # Convertir lista => matriz
+np_array[np_array > 1.74] # Subconjuntos
+np.median(np_array) # Mediana
+np.corrcoef(array1,array2) # Correlación
+list_example.shape # Fila,Columna
+np.std(np_array) # Desviación estandar
+np.column_stack((array1,array2)) # Juntar como 2 columnas
+
+# Creando MUESTRAS ALEATORIAS con DISTRIBUCION NORMAL
+# np.random.normal(loc:Media, scale:Standard desviation ,size:# muestras)
+arr_example = np.round(np.random.normal(1.75, 0.20, 5000),2)
+-----------------------------------------

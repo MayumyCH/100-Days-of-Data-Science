@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/BGwd7BS/portada-2.png" alt="descargar" border="0" width=800px>
+<img src="https://raw.githubusercontent.com/MayumyCH/100-Days-of-Data-Science/main/challenge%20information/challenge_cover_2.png" alt="descargar" border="0" width=800px>
 
 # Repositorio del reto 100daysofdata and 100daysofML
 
@@ -28,7 +28,7 @@ Meta:
 
 1. Python Fundamentals:
 [Skill Datacamp](https://learn.datacamp.com/skill-tracks/python-fundamentals?version=1) / 
-[Skill annotations]()
+[Skill annotations](https://github.com/MayumyCH/100-Days-of-Data-Science/tree/main/Skill%20Track%20-%20Python%20Fundamentals)
 
 2. Importing & cleaning Data:
 [Skill Datacamp]() / 
@@ -44,7 +44,7 @@ Meta:
 
 ## Términos y Condiciones del  reto 📌
 Todas las reglas, objetivos, evaluación del reto se encuentra en esta pagina:
-[terminosycondiciones.md]()
+[terminosycondiciones.md](https://github.com/MayumyCH/100-Days-of-Data-Science/blob/main/terminosycondiciones.md)
 
 ---
 ⌨️ con ❤️ por [Heydy Mayumy CH 💀](https://github.com/MayumyCH)
