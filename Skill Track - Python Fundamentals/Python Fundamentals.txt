@@ -35,15 +35,31 @@ y = x[:]
 -----------------------------------------
 --------------- Numpy -------------------
 list_example = [1.73, 1.68, 1.71, 1.89, 1.79] # Lista
+list_example.shape # Fila,Columna
+
 np_array = np.array(list_example) # Convertir lista => matriz
 np_array[np_array > 1.74] # Subconjuntos
+
 np.median(np_array) # Mediana
 np.corrcoef(array1,array2) # Correlación
-list_example.shape # Fila,Columna
 np.std(np_array) # Desviación estandar
 np.column_stack((array1,array2)) # Juntar como 2 columnas
+np.transpose(...) # Tranpuesta de la matriz
+
 
 # Creando MUESTRAS ALEATORIAS con DISTRIBUCION NORMAL
 # np.random.normal(loc:Media, scale:Standard desviation ,size:# muestras)
 arr_example = np.round(np.random.normal(1.75, 0.20, 5000),2)
+
+# Numpy booleanos
+var_cond = np.logical_and(np_array>1.70,np_array<1.74)
+np.logical_or()
+np.logical_not()
+
+np_array[var_cond]
+
+# Aleatorios
+np.random.rand() # Numero pseudoaleatorio entre (0;1)
+np.random.randint(0,7) # Numero entero entre (0;7)
+np.random.seed(123) # Valor semilla aleatoria, resultados reproducibles entre simulaciones.
 -----------------------------------------

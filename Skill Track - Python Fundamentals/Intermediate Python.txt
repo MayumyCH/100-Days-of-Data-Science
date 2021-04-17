@@ -1,0 +1,71 @@
+*************************************
+>> 02_IntermediatePython
+*************************************
+
+--------------- Matplotlib --------------
+import matplotlib.pyplot as plt
+
+plt.plot(x,y) #Grafico Lineas
+plt.scatter(x,y) #Grafico Dispersión
+plt.hist(x, bins=10) # Histogramas | defailt bins=10
+
+plt.xscale('log') #Escala eje
+
+plt.xlabel('Title X')
+plt.ylabel('Title Y')
+plt.title('Title X vs Y')
+
+tick_val = [1000, 10000, 100000]
+tick_lab = ['1k', '10k', '100k']
+plt.xticks(tick_val,tick_lab) # Marcas al eje "X"
+
+plt.text(5800, 65, 'Mayu') # Etiqueta a un punto
+plt.grid(True) # Mostrar grilla
+
+plt.show()
+plt.clf() #Limpiar para graficar de new
+-----------------------------------------
+
+--------------- Dictionaries ------------
+
+dic_example= {"clave1":30.55, "clave2":2.77, "clave3":39.21}
+
+dic_example["clave2"]=5
+"clave1" in world
+del(dic_example["clave2"])
+
+--------------- Pandas -------------------
+import pandas as pd
+
+df_base = pd.DataFrame(dict) # Diccionario => Dataframe
+df_base = pd.read_csv('path',index_col=0) # CSV = comma-separated values
+
+df_base.index = ["I1", "I2", "I3", "I4"]
+
+df_base['column1'] # Serie
+df_base[['column1']] # DataFrame
+df_base[1:4] #Filas en especifico
+
+df_base.loc[:,["column1","column2"]] # LOC => Tecnica basada en etiquetas
+df_base.iloc[[1,2,3],[0,1]] # LOC => Tecnica basada en posicion (index)
+
+df_base[np.logical_and(df_base['col1'] > 8,df_base['col1'] <10)]
+-----------------------------------------
+
+arr = [1.73, 1.68, 1.71, 1.89]
+
+# Iterar elementos
+# dicc (dictionary)     || for key, value in dicc.items() :
+# arr (Numpyarray 2D)   || for val in np.nditer(arr) : 
+# arr (array 1D)        || for index, element in enumerate(arr) :   
+# df1 (dataframe)       || for key, row in df.iterrows():   #row: column-value
+
+for element in arr :    
+    print(element)
+
+for key, row in df.iterrows():
+    df.loc[key, "newColumn"] = len(row["col1"])
+
+# New columna
+df1["newColumn"] = df1["col1"].apply(len)
+df1["newColumn"] = df1["col1"].apply(str.upper)
