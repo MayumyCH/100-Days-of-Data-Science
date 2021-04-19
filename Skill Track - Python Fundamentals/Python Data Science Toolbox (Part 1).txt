@@ -1,0 +1,42 @@
+*********************************************
+>> Python Data Science Toolbox (Part 1)
+*********************************************
+
+------ Funciones ----------------
+def example(parametro1, parametro2, parametro3 =8):
+    """Descripcion funcion"""
+    return new_valor
+
+result = example(...,...)
+result1, result2 = example(...,...)
+
+# Argumentos Flexibles
+def add_all(*args) # args es una tupla
+def print_all(**kwargs): # kwargs es un diccionario
+
+# lambda
+from functools import reduce 
+my_list = [2,3,4,5,6,7,8,9]
+
+result = map(lambda n: n*n , my_list)
+result = filter(lambda n: n>6, my_list)
+result_list = list(result)
+
+result_list = reduce(lambda item1,item2: item1+item2, my_list)
+print(result_list) # Objeto map => Convertir a lista 
+
+# Error
+
+def sqrt(x):
+  if x < 0:
+    raise ValueError('x must be non-negative') #Generando un error
+  try:
+    return x ** 0.5
+  except TypeError: # O solo except:
+    print('x must be an int or float')
+-----------------------------------------
+
+------ Alcance Variables ----------------
+global var_example # Cambiar el valor de la variable global
+nonlocal var_example # Cambiar el valor de una variable en un ambiente cerrado
+-----------------------------------------

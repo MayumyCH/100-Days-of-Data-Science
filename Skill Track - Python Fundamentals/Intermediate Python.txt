@@ -1,6 +1,6 @@
-*************************************
->> 02_IntermediatePython
-*************************************
+*********************************************
+>> Intermediate Python
+*********************************************
 
 --------------- Matplotlib --------------
 import matplotlib.pyplot as plt
@@ -31,8 +31,8 @@ plt.clf() #Limpiar para graficar de new
 dic_example= {"clave1":30.55, "clave2":2.77, "clave3":39.21}
 
 dic_example["clave2"]=5
-"clave1" in world
 del(dic_example["clave2"])
+'clave1' in dic_example.keys()
 
 --------------- Pandas -------------------
 import pandas as pd

@@ -46,5 +46,9 @@ Meta:
 Todas las reglas, objetivos, evaluación del reto se encuentra en esta pagina:
 [terminosycondiciones.md](https://github.com/MayumyCH/100-Days-of-Data-Science/blob/main/terminosycondiciones.md)
 
+## Link base del reto 100 dias - Yesi Day 🔗 
+- [Twiiter reto Yesi Days](https://twitter.com/silvercorp/status/1380696779839143936)
+- [Github reto Yesi Days](https://github.com/yesidays/100daysof)
+- [Video reto Yesi Days](https://www.youtube.com/watch?v=Lpm2_ulJGLk)
 ---
 ⌨️ con ❤️ por [Heydy Mayumy CH 💀](https://github.com/MayumyCH)
