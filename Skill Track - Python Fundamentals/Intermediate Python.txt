@@ -66,6 +66,8 @@ for element in arr :
 for key, row in df.iterrows():
     df.loc[key, "newColumn"] = len(row["col1"])
 
+# for index,value in enumerate(arr,start=1):
+
 # New columna
 df1["newColumn"] = df1["col1"].apply(len)
 df1["newColumn"] = df1["col1"].apply(str.upper)

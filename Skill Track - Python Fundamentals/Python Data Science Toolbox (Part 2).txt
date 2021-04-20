@@ -1,0 +1,42 @@
+*********************************************
+>> Python Data Science Toolbox (Part 2)
+*********************************************
+
+------------ Iterable -------------------
+word = "da"
+it = iter(word)
+it
+
+next(it)
+print(*it)
+
+arr = ["mayu","micha","jose"]
+age = [24,35,30]
+list(enumerate(arr)) # Lista de array de tuplas
+list(zip(arr,age)) # Lista tupla (Junta elementos de cada array)
+
+z1 = zip(arr,age)
+dic1 = dict(z1)
+print(*z1)
+-----------------------------------------
+
+---- Lista de Comprensiones -------------
+
+nums = [12, 8, 21, 3, 16]
+new_nums = [num + 1 for num in nums]
+new_nums = [i**2 for i in range(0, 5)]
+new_nums = [num** 2 if num % 2 == 0 else 0 for num in range(7)]
+new_nums = {num: num**2 for num in nums}
+
+nums = [12, 8, 21, 3, 16] # Lista de strings
+new_nums = [num for num in nums if num>=12] # Lista de Comprension
+new_nums = (num for num in nums if num>=12) # Generador expression
+
+>> Funcion generadora
+def get_lengths(input_list):
+    for num in input_list:
+        yield len(num)
+
+for value in get_lengths(nums):
+    print(value)
+-----------------------------------------
