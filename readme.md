@@ -20,7 +20,7 @@ Meta:
 
 ## Hitos del Reto 🔥 
     H1:  Track - Python Fundamentals (16 abril)
-    H2:  Track - Importing & cleaning Data (24 Mayo)
+    H2:  Track - Data Analyst Associate PowerBi (24 Mayo)
     H3:  Track - Statistics Fundamentals (24 Junio)
     H4:  Track - Machine Learning Fundamentals with Python (24 Julio)
 
